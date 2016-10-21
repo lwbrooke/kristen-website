@@ -1,6 +1,6 @@
-# lbrooke.com
+# kristen website
 
-My personal website
+Personal website for [Kristen Johnson](https://github.com/kristenjohnson)
 
 ## Technologies
 
@@ -13,7 +13,7 @@ My personal website
 ## Install and run development server
 
 - git clone https://github.com/lwbrooke/lbrooke.com
-- cd lbrooke.com
+- cd kristen-website
 - npm install
 - npm run server
 - navigate to http://localhost:8080
