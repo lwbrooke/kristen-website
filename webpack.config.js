@@ -114,7 +114,7 @@ module.exports = function makeWebpackConfig () {
             //
             // Reference: https://github.com/webpack/style-loader
             // Use style-loader in development.
-            loader: isTest ? 'null' : ExtractTextPlugin.extract('style-loader', 'css-loader?sourceMap!postcss-loader', 'less?sourceMap')
+            loader: isTest ? 'null' : ExtractTextPlugin.extract('style-loader', 'css?sourceMap!postcss-loader!less?sourceMap')
         }, {
             // ASSET LOADER
             // Reference: https://github.com/webpack/file-loader
@@ -122,7 +122,7 @@ module.exports = function makeWebpackConfig () {
             // Rename the file using the asset hash
             // Pass along the updated reference to your code
             // You can add here any file extension you want to get copied to your output
-            test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/,
+            test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot|docx)$/,
             loader: 'file'
         }, {
             // HTML LOADER
@@ -166,11 +166,11 @@ module.exports = function makeWebpackConfig () {
      */
     config.plugins = [
         new webpack.DefinePlugin({
-            AUTHOR: JSON.stringify('Logan Brooke'),
-            FACEBOOK_LINK: JSON.stringify('https://www.facebook.com/logan.brooke.3'),
-            GITHUB_LINK: JSON.stringify('https://github.com/lwbrooke'),
-            LINKEDIN_LINK: JSON.stringify('https://www.linkedin.com/in/loganwbrooke'),
-            SITE_NAME: JSON.stringify('lbrooke.com'),
+            AUTHOR: JSON.stringify('Kristen Johnson'),
+            FACEBOOK_LINK: JSON.stringify(''),
+            GITHUB_LINK: JSON.stringify('https://github.com/kristenjohnson'),
+            LINKEDIN_LINK: JSON.stringify('https://www.linkedin.com/in/kristenjohnson1'),
+            SITE_NAME: JSON.stringify('kristenjohnson.github.io'),
         })
     ];
 
